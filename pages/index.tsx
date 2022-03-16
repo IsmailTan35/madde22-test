@@ -11,7 +11,7 @@ const Home: NextPage = () => {
   const [bool,setBoolean] = useState(false)
 
   const getData = async () => {
-    const res=await axios.get(`http://www.omdbapi.com/?s=${value}&type=movie&apikey=4a249f8d`)
+    const res=await axios.get(`https://www.omdbapi.com/?s=${value}&type=movie&apikey=4a249f8d`)
     if(!res.data.Search) {
       setData([])
       setSearchText("")
